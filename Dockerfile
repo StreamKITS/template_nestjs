@@ -29,7 +29,7 @@ RUN apk add --no-cache \
  --prefer-offline \
  --pure-lockfile \
  --non-interactive \
- --production=false
+ --production=true
 
 COPY --from=builder /usr/src/app/dist ./dist
 
